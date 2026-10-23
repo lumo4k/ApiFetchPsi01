@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias Hacker News</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Notícias Hacker News</h1>
+        <nav aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#noticias">Notícias</a>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo!</h2>
+            <p>Confira notícias de tecnologia da comunidade Hacker News.</p>
+            <a href="#noticias">Ver notícias</a>
+        </section>
+        <section id="noticias" hidden>
+            <h2>Principais notícias</h2>
+            <label for="busca">Buscar por título nas 20 notícias carregadas:</label>
+            <input id="busca" type="search" placeholder="Digite uma palavra">
+            <p id="mensagem" role="status"></p>
+            <ul id="lista"></ul>
+        </section>
+        <section id="detalhes" hidden>
+            <a href="#noticias">Voltar para notícias</a>
+            <h2 id="titulo"></h2>
+            <p id="autor"></p>
+            <p id="pontos"></p>
+            <p id="data"></p>
+            <a id="link-noticia" target="_blank" rel="noopener noreferrer">Ler publicação no site de origem</a>
+        </section>
+    </main>
+    <footer>Projeto acadêmico — API pública do Hacker News</footer>
+</body>
+</html>
